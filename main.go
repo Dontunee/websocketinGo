@@ -130,9 +130,9 @@ func writeMessage(conn *websocket.Conn) {
 	ch := time.Tick(5 * time.Second)
 	for range ch {
 		conn.WriteJSON(MyStruct{
-			UserName:  "theodorekamma",
-			FirstName: "Theo",
-			LastName:  "Kamma",
+			UserName:  "",
+			FirstName: "",
+			LastName:  "",
 		})
 	}
 }
